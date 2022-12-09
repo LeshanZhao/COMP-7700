@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>53f2902e-78f4-458a-ae3a-c4aaf445fd3b</OriginalElement>
+  <nodes>
+    <node x="164.1715498839907" y="455.49049837587006">53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.Types</node>
+    <node x="213.5" y="781.0">53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.Status</node>
+    <node x="638.5" y="682.0">53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.Supplier</node>
+    <node x="-110.25" y="165.0">53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.UserRole</node>
+    <node x="791.7488399071926" y="-167.15635266821346">53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.sqlite_sequence</node>
+    <node x="279.4253048780488" y="1451.0">53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.OrderDetails</node>
+    <node x="-268.3618292343388" y="394.8531489559164">53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.Users</node>
+    <node x="74.125" y="1133.6373494199536">53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.Orders</node>
+    <node x="656.094512195122" y="1440.0">53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.ProductDetails</node>
+    <node x="-13.596905800464015" y="693.0">53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.ContactInfo</node>
+    <node x="-110.25" y="-181.0">53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.Authorization</node>
+    <node x="411.5" y="715.0">53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.Shipper</node>
+    <node x="358.2494199535963" y="-178.65635266821346">53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.sqlite_master</node>
+    <node x="650.5" y="1117.0">53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.Product</node>
+    <node x="417.0" y="1139.0">53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.ShipperMethod</node>
+    <node x="536.098607888631" y="-178.65635266821346">53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.AuthorizationLevels</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.Orders" target="53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.Users" relationship="REFERENCES">
+      <point x="-77.625" y="-147.5" />
+      <point x="100.0" y="1078.3906078886312" />
+      <point x="-229.1118292343388" y="1078.3906078886312" />
+      <point x="-39.25" y="114.5" />
+    </edge>
+    <edge source="53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.UserRole" target="53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.Authorization" relationship="REFERENCES">
+      <point x="0.0" y="-93.0" />
+      <point x="0.0" y="148.0" />
+    </edge>
+    <edge source="53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.Orders" target="53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.ContactInfo" relationship="REFERENCES">
+      <point x="-25.875" y="-147.5" />
+      <point x="151.75" y="1064.0" />
+      <point x="93.90309419953599" y="1064.0" />
+      <point x="0.0" y="169.5" />
+    </edge>
+    <edge source="53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.OrderDetails" target="53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.Orders" relationship="REFERENCES">
+      <point x="-45.5" y="-92.5" />
+      <point x="324.9253048780488" y="1415.0" />
+      <point x="177.625" y="1415.0" />
+      <point x="0.0" y="147.5" />
+    </edge>
+    <edge source="53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.OrderDetails" target="53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.Product" relationship="REFERENCES">
+      <point x="-0.0" y="-92.5" />
+      <point x="370.4253048780488" y="1363.5" />
+      <point x="-95.5" y="121.0" />
+    </edge>
+    <edge source="53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.ProductDetails" target="53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.Product" relationship="REFERENCES">
+      <point x="0.0" y="-103.5" />
+      <point x="753.094512195122" y="1415.0" />
+      <point x="793.75" y="1415.0" />
+      <point x="47.75" y="125.5" />
+    </edge>
+    <edge source="53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.Orders" target="53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.Status" relationship="REFERENCES">
+      <point x="25.875" y="-147.5" />
+      <point x="203.5" y="1064.0" />
+      <point x="302.5" y="1064.0" />
+      <point x="0.0" y="81.5" />
+    </edge>
+    <edge source="53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.Orders" target="53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.Shipper" relationship="REFERENCES">
+      <point x="77.625" y="-147.5" />
+      <point x="255.25" y="1074.0" />
+      <point x="515.0" y="1074.0" />
+      <point x="0.0" y="147.5" />
+    </edge>
+    <edge source="53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.Users" target="53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.UserRole" relationship="REFERENCES">
+      <point x="0.0" y="-114.5" />
+      <point x="-189.8618292343388" y="376.0" />
+      <point x="-17.75" y="376.0" />
+      <point x="0.0" y="93.0" />
+    </edge>
+    <edge source="53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.ContactInfo" target="53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.Types" relationship="REFERENCES">
+      <point x="53.75" y="-169.5" />
+      <point x="147.65309419953599" y="656.0" />
+      <point x="248.1715498839907" y="656.0" />
+      <point x="0.0" y="92.5" />
+    </edge>
+    <edge source="53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.Product" target="53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.Supplier" relationship="REFERENCES">
+      <point x="0.0" y="-125.5" />
+      <point x="0.0" y="180.5" />
+    </edge>
+    <edge source="53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.ContactInfo" target="53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.Users" relationship="REFERENCES">
+      <point x="-53.75" y="-169.5" />
+      <point x="40.153094199535985" y="656.0" />
+      <point x="-150.6118292343388" y="656.0" />
+      <point x="39.25" y="114.5" />
+    </edge>
+    <edge source="53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.ShipperMethod" target="53f2902e-78f4-458a-ae3a-c4aaf445fd3b.TABLE:main.Shipper" relationship="REFERENCES">
+      <point x="0.0" y="-103.5" />
+      <point x="0.0" y="147.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.46645021645021645" showDependencies="false" x="755.1793633410671" y="733.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
